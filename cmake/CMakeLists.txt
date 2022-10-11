@@ -11,3 +11,4 @@ add_subdirectory(tests)
 add_custom_target(test cd tests && ctest)
 
 add_subdirectory(demo)
+add_custom_target(run cd demo && ./demo.x)
