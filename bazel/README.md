@@ -1,4 +1,6 @@
-# install bazel on github codespaces
+# A example of Bazel build with PyTorch's C++ implementation (libtorch)
+
+## install bazel on github codespaces
 
 ```
 # go install github.com/bazelbuild/bazelisk@latest
