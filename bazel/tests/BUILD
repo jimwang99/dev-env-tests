@@ -6,7 +6,7 @@ cc_test(
     ],
     deps = [
         "//lib-hello",
-        "@gtest//:gtest_main",
+        "@com_google_googletest//:gtest_main",
     ],
 )
 
@@ -18,6 +18,19 @@ cc_test(
     ],
     deps = [
         "//lib-world",
-        "@gtest//:gtest_main",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
+
+cc_test(
+    name = "test-libtorch",
+    size = "small",
+    srcs = [
+        "test-libtorch.cc",
+    ],
+    deps = [
+        "@com_github_google_glog//:glog",
+        "@com_google_googletest//:gtest_main",
+        "@libtorch//:libtorch-cpu",
     ],
 )
