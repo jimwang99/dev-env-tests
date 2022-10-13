@@ -34,3 +34,13 @@ cc_test(
         "@libtorch//:libtorch-cpu",
     ],
 )
+
+py_test(
+    name = "test_hello",
+    srcs = [
+        "test_hello.py",
+    ],
+    deps = [
+        "//pylib",
+    ],
+)
